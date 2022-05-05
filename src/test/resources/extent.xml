@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <!-- report theme -->
+        <!-- standard, dark -->
+        <documentTitle>Teste automatizado Araujo</documentTitle>
+
+        <!-- document encoding -->
+        <!-- defaults to UTF-8 -->
+        <encoding>UTF-8</encoding>
+
+        <!-- protocol for script and stylesheets -->
+        <!-- defaults to https -->
+        <protocol>http</protocol>
+
+        <!-- title of the document -->
+        <reportName>
+            <![CDATA[
+               <img class='img' src='http://araujo.vteximg.com.br/arquivos/qd.logo.png'
+                style = "width: 116px;
+                    height: 37px;
+                    float: left;
+                    position: absolute;
+                    margin-left: -40%;
+                    margin-top: -3%;
+                    "/>
+               <span>Relat&oacute;rio de execu&ccedil;&atilde;o dos testes Araujo</span>
+            ]]>
+
+        </reportName>
+
+        <!-- report name - displayed at top-nav -->
+        <scripts>
+            <![CDATA[
+                $(document).ready(function() {
+                $(link[rel="shortcut icon"]').attr('href','http://araujo.vteximg.com.br/arquivos/araujo-favicon.ico?v=635539940243500000');
+                $('.logo').attr('style','background-image: url("http://araujo.vteximg.com.br/arquivos/araujo-favicon.ico?v=635539940243500000")');
+                });
+            ]]>
+        </scripts>
+
+        <!-- timestamp format -->
+        <styles>
+            <![CDATA[
+
+            ]]>
+        </styles>
+
+        <!-- custom javascript -->
+        <theme>dark</theme>
+
+        <!-- custom styles -->
+        <timeStampFormat>dd MMM, yyyy HH:mm:ss</timeStampFormat>
+    </configuration>
+</extentreports>
